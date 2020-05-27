@@ -1,0 +1,144 @@
+body{
+  height:100vh;
+  overflow: hidden;
+  color:white;
+  background: linear-gradient(to bottom, #000000 0%, #00ffcc 100%);
+}
+.container {
+  height: 500px;
+  border-radius: 50px;
+  background-color:#0FDDAF;
+  padding: 20px;
+  margin-top: 15%;
+  margin-left: 10%;    
+  margin-right: 10%;
+  box-shadow: 5px 5px 5px black;
+}
+@media(min-width:900px){
+  .container {
+      height: 495px;
+      border-radius: 50px;
+      background-color:#0FDDAF;
+      padding: 20px;
+      margin-top: 8%;
+      margin-left: 20%;    
+      margin-right: 20%;
+    }
+
+    
+}
+
+.info{
+  height: 410px;
+  background-color:black;
+  opacity: 0.8;
+  padding: 20px;
+  margin-top: -10px;
+  margin-left: -20px;    
+  margin-right: -20px;
+  border-radius:0 0 50px 50px;
+}
+@media(min-width:900px){
+  .info{
+      height: 415px;
+      background-color:black;
+      padding: 20px;
+      margin-top: -2%;
+      margin-left: -20px;    
+      margin-right: -20px;
+      opacity: 0.8;
+    }
+  .contact form select{
+      width:0%;
+      padding:0.8em;
+    }
+    
+}
+h1{
+    text-align: center;
+    color: black;
+}
+.alert{
+  text-align: center;
+  padding:10px;
+  background:black;
+  color:#0FDDAF;
+  margin-bottom:10px;
+  width: 80%;
+  margin: auto;
+  display: none;
+}
+
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:7px;
+}
+
+.contact form label{
+  display:block;
+}
+
+.contact form p{
+  margin:0;
+}
+
+.contact form .fullm{
+  grid-column: 1/3;
+  width: 120%;
+}
+.fullm input{
+    height: 40px;
+}
+
+.contact form button, .contact form input{
+  width:75%;
+  padding:0.8em;
+  background-color:black;
+  opacity: 0.8;
+  color:white;
+  
+}
+.contact form select{
+  width:97%;
+  padding:0.8em;
+  background-color:black;
+  opacity: 0.8;
+  color:white;
+}
+.contact form button{
+  background:#0FDDAF;
+  border:0;
+  text-transform: uppercase;
+  margin-top: 12px;;
+  margin-left: 60%;
+  padding: 15px;
+  color:black;
+}
+@media(min-width:900px){
+  
+  .contact form select{
+      width:92%;
+      padding:0.8em;
+    }
+    .contact form input{
+      width:85%;
+      padding:0.8em;
+      background-color:black;
+      opacity: 0.8;
+      color:white;
+      
+    }
+    .contact form .fullm{
+      grid-column: 1/3;
+      width: 110%;
+    }
+}
+
+.contact form button:hover{
+  
+  border: 2px solid #0FDDAF;
+  background-color: black;
+  color:#0FDDAF ;
+  transition: 0.5s;
+}

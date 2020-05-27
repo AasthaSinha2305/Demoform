@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FORM</title>
+</head>
+<body>
+    
+   <div class="container">
+    
+       <h1>DETAILS</h1>
+       <div class="info">
+        <div class="contact">
+            <form id="contactForm">
+                <p>
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" required>
+                </p>
+                <p>
+                    <label>Roll No.</label>
+                    <input type="text" name="rollno" id="rollno" required>
+                </p>
+                <p>
+                    <label>Collage</label>
+                    <input type="text" name="collage" id="collage" required>
+                </p>
+                <p>
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label>Whatsapp No.</label>
+                    <input type="text" name="phone" id="phone" required>
+                </p>
+                
+                <p>
+                    <label>Branch</label>
+                    <select name="branch" id="branch">
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Electrical">Electrical</option>
+                        <option value="Mechanical">Mechanical</option>
+                        <option value="Mechanical">Civil</option>
+                        <option value="Civil">Imsc</option>
+                      </select>
+                </p>
+                <p>
+                    <label>Year</label>
+                    <select name="year" id="year">
+                        <option value="first">First</option>
+                        <option value="second">Second</option>
+                        <option value="third">Third</option>
+                        <option value="fourth">Fourth</option>
+                        <option value="fifth">Fifth</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                        <option value="Other">Other</option>
+                        
+                    </select>
+                </p>
+                <p class="fullm">
+                    <label>Message</label>
+                    <input type="message" name="message" id="message">
+                </p>
+                
+                <p class="fulls">
+                    <button type="submit"><b>Submit</b></button>
+                </p>
+                
+            </form>
+            
+        </div>
+        
+    </div>
+    <br>
+    <div class="alert">Message has been sent</div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="web.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.5/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</html>
